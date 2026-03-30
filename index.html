@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Kmer Hoops | Page produits</title>
+</head>
+<body>
+    <!-- En tete du code -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./icones/acheter.png" width="40px"><h2>Kmer Hoops</h2>
+            </div>
+            <!-- Menu Principale /Sans le responsive/ -->
+            <ul class="menu" id="menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">A propos</a></li>
+            </ul>
+            <!-- Bouton du Responsive -->
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Barre de recherches -->
+            <div class="search">
+                <input type="input" name="search" id="search" placeholder=" Rechercher....">
+                <img src="./icones/search.png" width="20px" class="ico">
+                <div class="cart-wrapper">
+                    <img src="./icones/chariot.png" width="25px" class="ico1">
+                    <span class="cart-badge hidden" id="cart-badge">0</span>
+                </div>
+                <!-- Badge qui gere l'ajout d'un produits -->
+                <p>Cart</p>
+                <img src="./icones/user.png" width="25px" class="ico1"><p>Accounts</p>
+            </div>
+        </nav>
+        <!-- Menu Secondaire /Pendant le responsive/ -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="#" onclick="closeMenu()">Boutique</a></li>
+                <li><a href="#" onclick="closeMenu()">Produits</a></li>
+                <li><a href="#" onclick="closeMenu()">A propos</a></li>
+            </ul>
+            <div class="mobile-search">
+                <input type="text" placeholder="Rechercher...">
+            </div>
+            <!-- Iicones dans le Respnosive -->
+            <div class="mobile-icons">
+                <div class="mobile-icon-item">
+                    <div class="cart-wrapper" style="margin-left:0">
+                        <img src="./icones/chariot.png" width="22px">
+                        <span class="cart-badge hidden" id="cart-badge-mobile">0</span>
+                    </div>
+                    <span>Cart</span>
+                </div>
+                <div class="mobile-icon-item">
+                    <img src="./icones/user.png" width="22px">
+                    <span>Accounts</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+<!-- Messages de notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">🛒</span>
+        <span id="toast-msg">Article ajouté au panier !</span>
+    </div>
+
+    <section class="Parent">
+        <section class="Container">
+            <div class="Container-1"></div>
+            <div class="Container-2">
+                <div class="case1"></div>
+                <div class="case2"></div>
+                <div class="case3"></div>
+                <div class="case4"></div>
+            </div>
+        </section>
+        <section class="Container-3">
+            <div class="Title">
+                <h3>KD 17 sunrise</h3>
+                <p>Nike Edition</p>
+                <p>$137.00</p>
+            </div>
+            <div class="Sub-title">
+                <h4>
+                    Inspirée par le lever du soleil, la KD 17 Sunrise marie un mesh blanc immaculé à des vagues TPU orange et or.
+                    Légère, réactive grâce à son Air-Zoom avant-pied et confortable sur la durée, elle offre le parfait équilibre entre explosivité et style éclatant.
+                </h4>
+            </div>
+            <div class="choice">
+                <div class="moins" id="btn-moins"><p>-</p></div>
+                <div><input type="text" name="nombre" id="nombre" value="1" readonly></div>
+                <div class="plus" id="btn-plus"><p>+</p></div>
+            </div>
+            <p class="max-hint" id="max-hint">Max 10 articles</p>
+            <div class="btn">
+                <button id="btn-commander">Commander</button>
+                <button id="btn-panier">Ajouter au panier</button>
+            </div>
+        </section>
+    </section>
+    <script src="./App.js"></script>
+</body>
+</html>
