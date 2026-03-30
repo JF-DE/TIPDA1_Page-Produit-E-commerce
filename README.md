@@ -110,3 +110,5 @@ Projet réalisé par **[Ton Nom]** dans le cadre d'un apprentissage du développ
 ## 📄 Licence
 
 Ce projet est libre d'utilisation à des fins personnelles et éducatives.
+Lien d'accession :
+https://github.com/JF-DE/TIPDA1_Page-Produit-E-commerce
